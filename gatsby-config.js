@@ -1,9 +1,12 @@
+const siteUrl = `https://webdevrocket.com`
+
 module.exports = {
   siteMetadata: {
     title: `🚀 WebDevRocket`,
     author: `Kyle Mathews`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl,
+    disqusShortname: `webdevrocket`,
     social: {
       twitter: `kylemathews`,
     },
@@ -77,7 +80,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://webdevrocket.com`,
+        siteUrl,
         stripQueryString: true,
       },
     },
