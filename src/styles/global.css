@@ -1,6 +1,7 @@
 pre[class*="language-"] {
   border-radius: 0.3em;
   margin-bottom: 1.5em;
+  font-size: 16px;
 }
 
 h2::before,
