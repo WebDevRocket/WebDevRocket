@@ -14,10 +14,10 @@ class BlogPostTemplate extends React.Component {
       siteUrl,
       disqusShortname,
     } = this.props.data.site.siteMetadata
-    const { previous, next } = this.props.pageContext
+    const { previous, next, slug } = this.props.pageContext
 
     const disqusConfig = {
-      identifier: post.fields.slug,
+      identifier: slug,
       url: siteUrl + this.props.path,
       title: post.frontmatter.title,
     }
@@ -103,16 +103,12 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
       excerpt(pruneLength: 160)
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
-      }
-      fields {
-        slug
       }
     }
   }
