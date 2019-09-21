@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     const disqusConfig = {
-      identifier: post.id,
+      identifier: post.fields.slug,
       url: siteUrl + this.props.path,
       title: post.frontmatter.title,
     }
@@ -110,6 +110,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        slug
       }
     }
   }
