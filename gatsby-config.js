@@ -2,7 +2,7 @@ const siteUrl = `https://webdevrocket.com`
 
 module.exports = {
   siteMetadata: {
-    title: `🚀 WebDevRocket`,
+    title: `<WebDevRocket />`,
     author: `Kyle Mathews`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl,

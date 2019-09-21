@@ -33,8 +33,8 @@ class Layout extends React.Component {
     } else {
       header = (
         <h3
+          className="siteName"
           style={{
-            fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
           }}
         >
