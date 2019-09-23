@@ -21,11 +21,26 @@ made herself on the way.
   - this is very interesting
 - Goodness much until that fluid owl
 
-```javascript
+```js
 const bla = ({asd, qwe}) => {
   const zxc = asd + qwe;
   return `Foo ${zxc} bar`;
 };
+```
+
+```js
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
 ```
 
 When she reached the first hills of the **Italic Mountains**, she had a last
