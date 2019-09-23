@@ -5,3 +5,8 @@ h5::before,
 h6::before {
   content: "🚀 ";
 }
+
+footer {
+  font-size: 0.75em;
+  font-style: italic;
+}
