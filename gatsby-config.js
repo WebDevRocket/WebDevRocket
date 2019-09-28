@@ -85,11 +85,13 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-resolve-src",
+      resolve: `gatsby-plugin-resolve-src`,
       options: {
         addSassLoader: false,
       },
     },
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
   ],
 }
