@@ -1,8 +1,9 @@
 const siteUrl = `https://webdevrocket.com`
+const siteName = `<WebDevRocket />`
 
 module.exports = {
   siteMetadata: {
-    title: `<WebDevRocket />`,
+    title: siteName,
     author: `Wojciech Zawistowski`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl,
@@ -62,13 +63,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: siteName,
+        short_name: siteName,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/rocket.png`,
       },
     },
     `gatsby-plugin-offline`,
