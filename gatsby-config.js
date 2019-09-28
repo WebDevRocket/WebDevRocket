@@ -50,10 +50,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `UA-148892804-1`,
-        head: true,
+        trackingIds: [`UA-148892804-1`],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     `gatsby-plugin-feed`,
