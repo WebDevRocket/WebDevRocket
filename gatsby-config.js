@@ -84,5 +84,12 @@ module.exports = {
         stripQueryString: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-resolve-src",
+      options: {
+        addSassLoader: false,
+      },
+    },
+    `gatsby-plugin-styled-components`,
   ],
 }

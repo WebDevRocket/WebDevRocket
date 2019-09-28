@@ -1,7 +1,21 @@
 import React from "react"
+import styled from "styled-components"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "utils/typography"
+
+const TitleLink = styled(Link).attrs({
+  to: "/",
+})`
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+`
+
+const Footer = styled.footer`
+  font-size: 0.75em;
+  font-style: italic;
+`
 
 const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
@@ -25,16 +39,7 @@ const Layout = ({ location, children }) => {
           marginTop: 0,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
+        <TitleLink>{title}</TitleLink>
       </h1>
     ) : (
       <h3
@@ -43,16 +48,7 @@ const Layout = ({ location, children }) => {
           marginTop: 0,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
+        <TitleLink>{title}</TitleLink>
       </h3>
     )
 
@@ -67,9 +63,9 @@ const Layout = ({ location, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
+      <Footer>
         © {new Date().getFullYear()} {author}
-      </footer>
+      </Footer>
     </div>
   )
 }
