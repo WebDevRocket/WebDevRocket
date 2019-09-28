@@ -66,7 +66,7 @@ module.exports = {
         short_name: siteName,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#05a`,
+        theme_color: `#48b`,
         display: `minimal-ui`,
         icon: `content/assets/rocket.png`,
       },
