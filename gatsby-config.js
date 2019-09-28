@@ -43,7 +43,6 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-external-links`,
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-vscode`,
           `gatsby-remark-copy-linked-files`,
