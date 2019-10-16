@@ -39,3 +39,10 @@ code:not(.vscode-highlight-code) {
   padding: 3px 4px;
   margin: 0 2px;
 }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, #ccc, #fff);
+  margin: 2.4rem 0;
+}
