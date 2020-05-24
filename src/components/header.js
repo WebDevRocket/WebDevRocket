@@ -14,6 +14,7 @@ const Wrapper = styled.header`
 
 const Nav = styled.nav`
   display: flex;
+  align-items: flex-end;
   width: var(--main-width);
 
   @media (max-width: 688px) {
@@ -32,12 +33,19 @@ const TitleLink = styled(Link)`
   font-size: var(--font-size-16);
   font-weight: 400;
   letter-spacing: 1px;
+  text-decoration: none;
 `
 
 const NavLink = styled(Link).attrs({})`
   color: white;
   margin-left: var(--spacing-32);
   text-transform: capitalize;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: inset 0 -1px white;
+  }
 
   @media (max-width: 688px) {
     display: none;
