@@ -30,7 +30,7 @@
 
   --main-width: var(--spacing-640);
 
-  --font-family-text: Nunito, Arial, sans-serif;
+  --font-family-text: Roboto, Arial, sans-serif;
   --font-family-code: "Fira Mono", "Courier New", monospace;
 
   /* --vscode-highlight-border-radius: 0 !important; */
