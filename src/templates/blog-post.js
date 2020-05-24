@@ -1,10 +1,10 @@
 import React from "react"
+import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 import { DiscussionEmbed } from "disqus-react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -23,43 +23,26 @@ class BlogPostTemplate extends React.Component {
     }
 
     return (
-      <Layout location={this.props.location}>
+      <Layout>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
+            <h1>{post.frontmatter.title}</h1>
+            <p>
               {post.frontmatter.date} | {author}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
+          <hr />
           <footer></footer>
         </article>
 
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 
-        <nav>
+        {/* <nav>
           <ul
             style={{
               display: `flex`,
@@ -84,7 +67,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </Layout>
     )
   }
