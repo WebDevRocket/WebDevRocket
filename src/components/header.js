@@ -45,7 +45,7 @@ const TitleLink = styled(Link)`
   }
 
   @media (max-width: 688px) {
-    font-size: var(--font-size-24);
+    font-size: var(--font-size-20);
   }
 `
 
