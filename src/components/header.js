@@ -43,10 +43,6 @@ const TitleLink = styled(Link)`
   &:hover {
     text-decoration: none;
   }
-
-  @media (max-width: 688px) {
-    font-size: var(--font-size-20);
-  }
 `
 
 const NavLink = styled(Link).attrs({})`
