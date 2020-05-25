@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 const Wrapper = styled.header`
-  background: var(--color-top);
+  background: linear-gradient(to right, var(--color-accent), var(--color-dark));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +13,8 @@ const Wrapper = styled.header`
 
   @media (max-width: 784px) {
     margin-top: 0;
+    height: var(--spacing-64);
+    background: var(--color-accent);
   }
 `
 
@@ -73,8 +75,11 @@ const Logo = styled.img.attrs({
 })`
   width: 48px;
   height: 48px;
+  /* width: 36px;
+  height: 36px; */
   position: absolute;
   left: -60px;
+  /* left: -44px; */
 
   @media (max-width: 784px) {
     display: none;
