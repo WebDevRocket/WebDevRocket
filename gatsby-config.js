@@ -1,5 +1,5 @@
 const siteUrl = `https://webdevrocket.com`
-const siteName = `<WebDevRocket />`
+const siteName = `<WebDevRocket/>`
 
 module.exports = {
   siteMetadata: {

@@ -11,7 +11,7 @@ const Wrapper = styled.header`
   width: 100%;
   margin-top: 12px;
 
-  @media (max-width: 784px) {
+  @media (max-width: 688px) {
     margin-top: 0;
     height: var(--spacing-64);
     background: var(--color-accent);
@@ -38,11 +38,14 @@ const TitleLink = styled(Link)`
   font-family: var(--font-family-code);
   font-size: var(--font-size-18);
   font-weight: 400;
-  letter-spacing: 1px;
   text-decoration: none;
 
   &:hover {
     text-decoration: none;
+  }
+
+  @media (max-width: 688px) {
+    font-size: var(--font-size-24);
   }
 `
 
