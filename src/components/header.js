@@ -5,21 +5,25 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 const Wrapper = styled.header`
   background-color: #44318d;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  height: var(--spacing-96);
+  height: var(--spacing-32);
   width: 100%;
-  padding-bottom: var(--spacing-4);
+  margin-top: 12px;
+
+  @media (max-width: 784px) {
+    margin-top: 0;
+  }
 `
 
 const Nav = styled.nav`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: var(--main-width);
+  position: relative;
 
   @media (max-width: 688px) {
     margin: 0 var(--spacing-24);
-    /* width: 100%; */
   }
 `
 
@@ -30,7 +34,7 @@ const TitleLinkWrapper = styled.div`
 const TitleLink = styled(Link)`
   color: white;
   font-family: var(--font-family-code);
-  font-size: var(--font-size-16);
+  font-size: var(--font-size-18);
   font-weight: 400;
   letter-spacing: 1px;
   text-decoration: none;
@@ -45,9 +49,24 @@ const NavLink = styled(Link).attrs({})`
 
   &:hover {
     box-shadow: inset 0 -1px white;
+    box-shadow: inset 0 -2px white;
   }
 
   @media (max-width: 688px) {
+    display: none;
+  }
+`
+
+const Logo = styled.img.attrs({
+  src: "/icons/icon-48x48.png",
+  alt: "rocket logo",
+})`
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: -60px;
+
+  @media (max-width: 784px) {
     display: none;
   }
 `
@@ -68,6 +87,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Nav>
+        <Logo />
         <TitleLinkWrapper>
           <TitleLink to="/">{title}</TitleLink>
         </TitleLinkWrapper>

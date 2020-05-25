@@ -65,13 +65,12 @@ h4::before {
   margin-right: var(--spacing-12);
 }
 
-@media (max-width: 745px) {
+@media (max-width: 784px) {
   h2::before,
   h3::before,
   h4::before {
     margin-right: calc(1.5rem - var(--icon-size));
     margin-left: 0;
-    /* display: none; */
   }
 }
 
@@ -88,24 +87,27 @@ h1, h2, h3, h4 {
 ul, ol, p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
   font-size: var(--font-size-36);
   font-size: var(--font-size-48);
-  /* font-weight: 900; */
   font-weight: 700;
   margin-top: 3em;
   margin-bottom: 3em;
-  /* text-align: center; */
+  text-transform: uppercase;
+  /* color: #333; */
+  text-align: center;
 }
 
 h2 {
   font-size: var(--font-size-30);
   font-weight: 700;
   margin-top: 3rem;
-  margin-top: 2.5rem;
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 
 h2 > a {
@@ -122,7 +124,7 @@ h3 {
 h4 {
   font-size: var(--font-size-18);
   font-weight: 700;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -139,6 +141,7 @@ code:not(.vscode-highlight-code) {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 2px 4px;
   margin: 0 2px;
+  font-size: var(--font-size-16);
 }
 
 hr {
@@ -146,4 +149,13 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, #ccc, #fff);
   margin: 2.5rem 0;
+}
+
+@media (max-width: 688px) {
+  .vscode-highlight {
+    margin-left: -24px;
+    margin-right: -24px;
+
+    --vscode-highlight-border-radius: 0;
+  }
 }
