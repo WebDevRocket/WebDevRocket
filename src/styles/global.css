@@ -33,23 +33,17 @@
   --font-family-text: Roboto, Arial, sans-serif;
   --font-family-code: "Fira Mono", "Courier New", monospace;
 
-  /* B&W */
-  --color-accent: #888;
-  --color-dark: #333;
-  --color-link: #3c77ba;
-  --color-top: linear-gradient(to right, var(--color-accent), #000);
-
-  --color-accent: #3F7FB9;
-  --color-dark: #1B366D;
-  --color-link: #3F7FB9;
-
   --color-accent: #7374C7;
   --color-dark: #543DA8;
   --color-link: #7374C7;
 
-  --color-accent: #4785D4;
+  /* --color-accent: #3F7FB9;
+  --color-dark: #1B366D;
+  --color-link: #3F7FB9; */
+
+  /* --color-accent: #4785D4;
   --color-dark: #4D5C85;
-  --color-link: #4785D4;
+  --color-link: #4785D4; */
 }
 
 * {
