@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 const Wrapper = styled.header`
-  background-color: #44318d;
+  background: var(--color-top);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,10 @@ const TitleLink = styled(Link)`
   font-weight: 400;
   letter-spacing: 1px;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 `
 
 const NavLink = styled(Link).attrs({})`
@@ -45,11 +49,17 @@ const NavLink = styled(Link).attrs({})`
   margin-left: var(--spacing-32);
   text-transform: capitalize;
   text-decoration: none;
-  transition: box-shadow 0.3s ease-in-out;
+  /* transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out; */
+  /* transition: color 0.25s ease-in-out; */
 
   &:hover {
-    box-shadow: inset 0 -1px white;
-    box-shadow: inset 0 -2px white;
+    /* text-decoration: none; */
+    /* box-shadow: inset 0 -1px white; */
+    /* box-shadow: inset 0 -2px white; */
+    /* box-shadow: 0 2px white; */
+    /* color: black; */
+    /* color: #333; */
+    /* box-shadow: inset 0 -2px #d6ce15; */
   }
 
   @media (max-width: 688px) {

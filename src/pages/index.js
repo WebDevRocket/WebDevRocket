@@ -1,8 +1,22 @@
 import React from "react"
+import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+const Article = styled.article`
+  h2::before,
+  h3::before,
+  h4::before {
+    display: none;
+  }
+
+  a {
+    /* color: rgb(56, 88, 152); */
+    color: inherit;
+  }
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,7 +28,7 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article key={node.fields.slug}>
+            <Article key={node.fields.slug}>
               <header>
                 <h2>
                   <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
@@ -30,7 +44,7 @@ class BlogIndex extends React.Component {
                   }}
                 />
               </section>
-            </article>
+            </Article>
           )
         })}
       </Layout>
