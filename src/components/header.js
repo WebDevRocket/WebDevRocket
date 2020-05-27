@@ -47,6 +47,9 @@ const TitleLink = styled(Link)`
 
 const NavLink = styled(Link).attrs({})`
   color: white;
+  font-family: var(--font-family-heading);
+  /* font-family: var(--font-family-code); */
+  font-size: 18px;
   margin-left: var(--spacing-32);
   text-transform: capitalize;
   text-decoration: none;

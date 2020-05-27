@@ -31,6 +31,7 @@
   --main-width: var(--spacing-640);
 
   --font-family-text: Roboto, Arial, sans-serif;
+  --font-family-heading: Nunito, Arial, sans-serif;
   --font-family-code: "Fira Mono", "Courier New", monospace;
 
   --color-accent: #7374C7;
@@ -59,6 +60,9 @@ html {
   font-family: var(--font-family-text);
   font-size: var(--font-size-18);
   line-height: 1.6;
+
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-20);
 }
 
 h2::before,
@@ -100,6 +104,7 @@ a:hover {
 h1, h2, h3, h4 {
   line-height: 1.1;
   color: var(--color-dark);
+  font-family: var(--font-family-heading);
 }
 
 ul, ol, p {
@@ -116,7 +121,6 @@ h1 {
   margin-top: 3em;
   margin-bottom: 3em;
   text-transform: uppercase;
-  text-align: center;
 }
 
 h2 {
@@ -140,6 +144,7 @@ h3 {
 
 h4 {
   font-size: var(--font-size-18);
+  font-size: var(--font-size-20);
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
