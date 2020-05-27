@@ -47,24 +47,10 @@ const TitleLink = styled(Link)`
 
 const NavLink = styled(Link).attrs({})`
   color: white;
-  font-family: var(--font-family-heading);
-  /* font-family: var(--font-family-code); */
   font-size: 18px;
   margin-left: var(--spacing-32);
   text-transform: capitalize;
   text-decoration: none;
-  /* transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out; */
-  /* transition: color 0.25s ease-in-out; */
-
-  &:hover {
-    /* text-decoration: none; */
-    /* box-shadow: inset 0 -1px white; */
-    /* box-shadow: inset 0 -2px white; */
-    /* box-shadow: 0 2px white; */
-    /* color: black; */
-    /* color: #333; */
-    /* box-shadow: inset 0 -2px #d6ce15; */
-  }
 
   @media (max-width: 688px) {
     display: none;
@@ -77,11 +63,8 @@ const Logo = styled.img.attrs({
 })`
   width: 48px;
   height: 48px;
-  /* width: 36px;
-  height: 36px; */
   position: absolute;
   left: -60px;
-  /* left: -44px; */
 
   @media (max-width: 784px) {
     display: none;

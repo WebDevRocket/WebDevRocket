@@ -89,11 +89,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Roboto:400,400i,700`,
-          `Fira Mono:400`,
-          `Nunito:700,400,800,900`,
-        ],
+        fonts: [`Nunito Sans:400,400i,700`, `Fira Mono:400`],
         display: "swap",
       },
     },
