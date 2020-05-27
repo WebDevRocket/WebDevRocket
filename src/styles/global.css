@@ -112,7 +112,7 @@ h1 {
 @media (max-width: 784px) {
   h1 {
     font-size: var(--font-size-30);
-    font-weight: 900;
+    color: black;
   }
 }
 
