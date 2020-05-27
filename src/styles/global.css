@@ -41,9 +41,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body, #___gatsby, #gatsby-focus-wrapper {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 html {
@@ -108,7 +109,7 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 784px) {
+@media (max-width: 1024px) {
   h1 {
     font-size: var(--font-size-32)
   }

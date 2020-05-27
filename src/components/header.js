@@ -45,7 +45,7 @@ const TitleLink = styled(Link)`
   }
 `
 
-const NavLink = styled(Link).attrs({})`
+const NavLink = styled(Link)`
   color: white;
   font-size: var(--font-size-18);
   margin-left: var(--spacing-32);
@@ -91,9 +91,9 @@ const Header = () => {
         <TitleLinkWrapper>
           <TitleLink to="/">{title}</TitleLink>
         </TitleLinkWrapper>
-        <NavLink>guides</NavLink>
-        <NavLink>posts</NavLink>
-        <NavLink>hints</NavLink>
+        <NavLink to="">guides</NavLink>
+        <NavLink to="">posts</NavLink>
+        <NavLink to="">hints</NavLink>
       </Nav>
     </Wrapper>
   )

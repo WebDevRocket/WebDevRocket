@@ -13,7 +13,6 @@ const Article = styled.article`
   }
 
   a {
-    /* color: rgb(56, 88, 152); */
     color: inherit;
   }
 `
@@ -31,9 +30,7 @@ class BlogIndex extends React.Component {
             <Article key={node.fields.slug}>
               <header>
                 <h2>
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
+                  <Link to={node.fields.slug}>{title}</Link>
                 </h2>
                 <small>{node.frontmatter.date}</small>
               </header>

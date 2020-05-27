@@ -1,6 +1,5 @@
 import React from "react"
-import styled from "styled-components"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { DiscussionEmbed } from "disqus-react"
 
 import Layout from "../components/layout"
@@ -14,7 +13,7 @@ class BlogPostTemplate extends React.Component {
       author,
       disqusShortname,
     } = this.props.data.site.siteMetadata
-    const { previous, next, slug } = this.props.pageContext
+    const { /*previous, next,*/ slug } = this.props.pageContext
 
     const disqusConfig = {
       identifier: slug,
