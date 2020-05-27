@@ -30,7 +30,7 @@
 
   --main-width: var(--spacing-640);
 
-  --font-family-text: "Nunito Sans", Arial, sans-serif;
+  --font-family-text: "Nunito", Arial, sans-serif;
   --font-family-code: "Fira Mono", "Courier New", monospace;
 
   --color-accent: #3F7FB9;
@@ -103,7 +103,6 @@ ul, ol, p {
 }
 
 h1 {
-  font-size: var(--font-size-36);
   font-size: var(--font-size-48);
   margin-top: 3em;
   margin-bottom: 3em;
@@ -112,7 +111,7 @@ h1 {
 
 @media (max-width: 784px) {
   h1 {
-    font-size: var(--font-size-36);
+    font-size: var(--font-size-30);
   }
 }
 
