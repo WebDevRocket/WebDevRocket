@@ -30,7 +30,7 @@
 
   --main-width: var(--spacing-640);
 
-  --font-family-text: "Nunito", Arial, sans-serif;
+  --font-family-text: "Roboto", Arial, sans-serif;
   --font-family-code: "Fira Mono", "Courier New", monospace;
 
   --color-accent: #3F7FB9;
@@ -50,6 +50,7 @@ html, body {
 html {
   font-family: var(--font-family-text);
   font-size: var(--font-size-20);
+  font-size: var(--font-size-18);
   line-height: 1.6;
 }
 
@@ -112,12 +113,11 @@ h1 {
 @media (max-width: 784px) {
   h1 {
     font-size: var(--font-size-30);
-    color: black;
   }
 }
 
 h2 {
-  font-size: var(--font-size-30);
+  font-size: var(--font-size-24);
   margin-top: 3rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -128,13 +128,13 @@ h2 > a {
 }
 
 h3 {
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-20);
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 h4 {
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-18);
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
