@@ -118,14 +118,22 @@ h1 {
   font-size: var(--font-size-36);
   font-size: var(--font-size-48);
   font-weight: 700;
+  font-weight: 800;
   margin-top: 3em;
   margin-bottom: 3em;
   text-transform: uppercase;
 }
 
+@media (max-width: 784px) {
+  h1 {
+    font-size: var(--font-size-36);
+  }
+}
+
 h2 {
   font-size: var(--font-size-30);
   font-weight: 700;
+  font-weight: 800;
   margin-top: 3rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -138,6 +146,7 @@ h2 > a {
 h3 {
   font-size: var(--font-size-24);
   font-weight: 700;
+  font-weight: 800;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -146,6 +155,7 @@ h4 {
   font-size: var(--font-size-18);
   font-size: var(--font-size-20);
   font-weight: 700;
+  font-weight: 800;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
