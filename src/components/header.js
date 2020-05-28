@@ -58,7 +58,7 @@ const NavLink = styled(Link)`
 
   @media (max-width: 480px) {
     &:not(:first-of-type) {
-      margin-left: var(--spacing-16);
+      margin-left: var(--spacing-12);
     }
   }
 `
