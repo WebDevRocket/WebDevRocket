@@ -26,6 +26,7 @@ const Nav = styled.nav`
 
   @media (max-width: 688px) {
     margin: 0 var(--spacing-24);
+    width: 100%;
   }
 `
 
@@ -48,12 +49,17 @@ const TitleLink = styled(Link)`
 const NavLink = styled(Link)`
   color: white;
   font-size: var(--font-size-18);
-  margin-left: var(--spacing-32);
   text-transform: capitalize;
   text-decoration: none;
 
-  @media (max-width: 688px) {
-    display: none;
+  &:not(:first-of-type) {
+    margin-left: var(--spacing-32);
+  }
+
+  @media (max-width: 480px) {
+    &:not(:first-of-type) {
+      margin-left: var(--spacing-16);
+    }
   }
 `
 
